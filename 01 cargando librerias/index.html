@@ -5,12 +5,22 @@
     <title></title>
 </head>
 <body ng-app="app" ng-controller="demoCtrl">
+
+
 {{holamundo}}
+
+
+<!--Libreria AngularJS CDN -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.28/angular.min.js"></script>
+
 <script>
-    angular.module('app',[]).controller('demoCtrl',function($scope){
-        $scope.holamundo='Hola Mundo';
-    })
+       //Declaracion de Aplicacion
+    angular.module('app', [])
+        //Controlador ng-controller
+            .controller('demoCtrl', function ($scope) {
+                //Scope es para manejar datos entre el template y el controlador
+                $scope.holamundo = 'Hola Mundo';
+            })
 </script>
 </body>
 </html>
